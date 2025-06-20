@@ -1,7 +1,13 @@
+import Hero from "./sections/Hero";
+
 function App() {
   return (
     <>
-      <h1 className="text-red-500">Init</h1>
+      <main id="top" className="relative bg-[#111111]">
+        <section id="hero" data-section>
+          <Hero />
+        </section>
+      </main>
     </>
   );
 }

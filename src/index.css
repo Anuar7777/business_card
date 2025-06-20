@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+
+  --color-green-400: #0aff9d; /* neon */
+
+  --color-gray-200: #ebecf3; /* slight-gray */
+  --color-gray-300: #c0c1c7;
+  --color-gray-600: #6d6d6d; /* slate-gray */
+
+  --color-red-400: #ff6452; /* coral-red */
+
+  --color-blue-50: #f5f6ff; /* pale-blue */
+  --color-white-400: rgba(255, 255, 255, 0.8); /* white-transparent */
+}
