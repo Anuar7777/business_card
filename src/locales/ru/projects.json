@@ -1,0 +1,79 @@
+{
+  "title": "Проекты",
+  "items": [
+    {
+      "name": "Ronin",
+      "imgs": [
+        {
+          "src": "/img/projects/livedocs/livedocs-editor.png"
+        },
+        {
+          "src": "/img/projects/livedocs/livedocs-editor.png"
+        },
+        {
+          "src": "/img/projects/livedocs/livedocs-editor.png"
+        },
+        {
+          "src": "/img/projects/livedocs/livedocs-editor.png"
+        }
+      ],
+      "heroImg": "/img/projects/livedocs/livedocs-eidtor.png",
+      "tech": "REACT - NEXT - SCSS",
+      "smallText": "Современная посадочная страница для дизайн-агентства с элегантным дизайном и плавными анимациями.",
+      "bigText": "Ronin - это современная посадочная страница для дизайн-агентства, созданная с использованием React, Next.js и SCSS. Проект демонстрирует мою способность создавать визуально привлекательные и удобные для пользователя интерфейсы, улучшая пользовательский опыт.\n\nСайт включает динамичный раздел героя, раздел услуг, раздел FAQ и раздел о нас, все тщательно разработанные для бесшовного взаимодействия с пользователем. Использование SCSS обеспечивает последовательный и визуально привлекательный дизайн, а интеграция Framer Motion добавляет тонкие, но увлекательные анимации.\n\nЭтот проект свидетельствует о моих навыках веб-разработки и страсти к созданию привлекательных веб-опытов.",
+      "github": "https://github.com/SoftDev-Abay/ronin-ui",
+      "live": "https://ronin-ui-seven.vercel.app/",
+      "openSpan": "Узнать больше"
+    },
+    {
+      "name": "HashCats",
+      "imgs": [
+        {
+          "src": "/img/projects/hash-cats/hash-cats-hero.png"
+        },
+        {
+          "src": "/img/projects/hash-cats/hash-cats-story.png"
+        },
+        {
+          "src": "/img/projects/hash-cats/hash-cats-grid.png"
+        },
+        {
+          "src": "/img/projects/hash-cats/hash-cats-tips.png"
+        },
+        {
+          "src": "/img/projects/hash-cats/hash-cats-roadmap.png"
+        },
+        {
+          "src": "/img/projects/hash-cats/hash-cats-footer.png"
+        }
+      ],
+      "heroImg": "/img/projects/hash-cats/hash-cats-hero.png",
+      "tech": "REACT - NEXT - SCSS",
+      "smallText": "Посадочная страница для криптовалютной компании с элегантным дизайном и плавными анимациями.",
+      "bigText": "Hash-Cats - это посадочная страница для криптовалютной компании, созданная с использованием React, Next.js и SCSS. Проект демонстрирует мою способность создавать визуально привлекательные и удобные для пользователя интерфейсы, улучшая пользовательский опыт.\n\nСайт включает динамичный раздел героя, раздел услуг, раздел FAQ и раздел о нас, все тщательно разработанные для бесшовного взаимодействия с пользователем. Использование SCSS обеспечивает последовательный и визуально привлекательный дизайн, а интеграция Framer Motion добавляет тонкие, но увлекательные анимации.\n\nЭтот проект свидетельствует о моих навыках веб-разработки и страсти к созданию привлекательных веб-опытов.",
+      "github": "https://github.com/SoftDev-Abay/tera-hash",
+      "live": "https://hashcats.net",
+      "openSpan": "Узнать больше"
+    },
+    {
+      "name": "Esep",
+      "imgs": [
+        {
+          "src": "/img/projects/esep/public_graph.png"
+        },
+        {
+          "src": "/img/projects/esep/public_statistics.png"
+        },
+        {
+          "src": "/img/projects/esep/admin_constructor.png"
+        }
+      ],
+      "heroImg": "/img/projects/esep/public_graph.png",
+      "tech": "React - Redux - Node.js - MySQL",
+      "smallText": "Государственная платформа для отслеживания и управления отчетами",
+      "bigText": "Государственная платформа компании DGSC, используемая для отслеживания и управления государственными отчетами.\n\nОтчеты структурированы в виде таблиц, есть респонденты и администраторы. Администраторы могут использовать уникально созданный конструктор отчетов и назначать отчеты определенным респондентам, которые заполняют соответствующую статистику и отправляют их. Также на платформе отчеты могут быть агрегированы, что позволяет видеть данные, например, по регионам или отраслям.\n\nПроект создан с использованием Node.js, MySQL, ClickHouse, а на фронтенде использовались Typescript, React, Redux и SCSS.",
+      "live": "https://esep.govtec.kz",
+      "openSpan": "Узнать больше"
+    }
+  ]
+}

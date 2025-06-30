@@ -14,3 +14,65 @@
   --color-blue-50: #f5f6ff; /* pale-blue */
   --color-white-400: rgba(255, 255, 255, 0.8); /* white-transparent */
 }
+
+@layer base {
+  /* reset styles */
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* base styles */
+
+  h1 {
+    @apply max-md:text-6xl text-8xl;
+  }
+  h2 {
+    @apply max-md:text-6xl text-6xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-gray-200 font-extrabold tracking-tighter;
+  }
+
+  p {
+    @apply text-gray-300 text-lg;
+  }
+
+  span {
+    @apply text-green-400;
+  }
+}
+
+@layer utilities {
+  .stack-grid {
+    @apply flex flex-wrap mt-6 gap-5;
+  }
+
+  .stack-item {
+    @apply bg-[#232323] leading-none rounded-xl pt-1.5 pb-2.5 px-2 text-[#d6d7db] font-medium text-lg inline-block mr-3 mb-3;
+  }
+}
