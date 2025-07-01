@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FaLinkedin, FaGithub, FaArrowRight, FaCode } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa6";
+import { RiTelegram2Fill } from "react-icons/ri";
 
 const About = () => {
   const { t } = useTranslation("about");
@@ -40,6 +41,12 @@ const About = () => {
                   target="_blank"
                   rel="noreferrer noopener">
                   <FaGithub className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
+                </a>
+                <a
+                  href="https://t.me/Jasulanuly"
+                  target="_blank"
+                  rel="noreferrer noopener">
+                  <RiTelegram2Fill className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
                 </a>
               </div>
             </div>

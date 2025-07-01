@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isOpenProjectModal, setIsOpenProjectModal] = useState(false);
@@ -12,8 +13,9 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <main id="top" className="relative bg-[#111111]">
+        <Navbar />
         <section id="hero" data-section>
           <Hero />
         </section>
@@ -23,14 +25,14 @@ function App() {
         <section id="projects" className="mt-[150px]" data-section>
           <Projects modalHandler={ProjectModalHandler} />
         </section>
-        <section id="experience" data-section>
+        <section id="experience" className="mt-[150px]" data-section>
           <Experience />
         </section>
-        <section id="contact" className="mt-[50px]">
+        <section id="contact">
           <Contact />
         </section>
       </main>
-    </>
+    </div>
   );
 }
 
