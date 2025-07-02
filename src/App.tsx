@@ -4,7 +4,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
-import Navbar from "./components/Navbar";
+import ProfileLinks from "./components/ProfileLinks";
 
 function App() {
   const [isOpenProjectModal, setIsOpenProjectModal] = useState(false);
@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <main id="top" className="relative bg-[#111111]">
-        <Navbar />
+        <ProfileLinks />
         <section id="hero" data-section>
           <Hero />
         </section>

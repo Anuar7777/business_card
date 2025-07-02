@@ -2,11 +2,13 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiTelegram2Fill } from "react-icons/ri";
+import { RESUME_EN, RESUME_RU } from "../config/env";
 
-const Navbar = () => {
-  const { t } = useTranslation("navbar");
+const ProfileLinks = () => {
+  const { t } = useTranslation("links");
 
-  const resumeURL = t("resumeName");
+  const resumeURL = t("resumeName") === "resume_en" ? RESUME_EN : RESUME_RU;
+  console.log(resumeURL); // undefined
 
   const socialLinks = [
     { href: "https://www.linkedin.com/in/anuar-aman/", icon: <FaLinkedin /> },
@@ -26,21 +28,16 @@ const Navbar = () => {
           </a>
         ))}
       </div>
+
       <a
+        className="resume-button"
         href={resumeURL}
         target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#0aff9d] text-xl pt-[8px] pb-[10px] px-[22px]  
-    border-[#0aff9d] border-[1px] rounded-md hover:text-black z-[60] relative ease-in-out duration-150
-    before:z-[9] before:content-[' '] before:absolute before:bg-green-400 before:border-green-400
-    before:top-0 before:left-0 before:w-[0%] before:h-[0%] before:rounded-l-md 
-    before:transition-all before:duration-200 before:ease-in-out
-    hover:before:rounded-md hover:before:w-full hover:before:h-full
-  ">
-        {t("button")}
+        rel="noopener noreferrer">
+        <span>{t("button")}</span>
       </a>
     </nav>
   );
 };
 
-export default Navbar;
+export default ProfileLinks;

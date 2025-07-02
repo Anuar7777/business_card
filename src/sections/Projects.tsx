@@ -5,7 +5,7 @@ const Projects = ({ modalHandler }) => {
   const { t } = useTranslation("projects");
 
   const projects = t("items", { returnObjects: true });
-  console.log("projects: ", projects);
+
   return (
     <div className="flex relative justify-center">
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] ">

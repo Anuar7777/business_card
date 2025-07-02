@@ -23,7 +23,7 @@ const About = () => {
         <div className="grid grid-cols-[1fr_300px] gap-10 mt-[34px] max-md:grid-cols-1">
           <div className="flex flex-col gap-5">
             {!!descriptionParagraphs &&
-              descriptionParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+              descriptionParagraphs.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)}
             <div className=" flex items-center gap-5 pt-1">
               <div className="flex items-center gap-3">
                 <p className="font-medium text-green-400">{t("linksTitle")}</p>

@@ -13,6 +13,8 @@
 
   --color-blue-50: #f5f6ff; /* pale-blue */
   --color-white-400: rgba(255, 255, 255, 0.8); /* white-transparent */
+
+  --ease-in-expo: cubic-bezier(0.3, 1, 0.8, 1);
 }
 
 @layer base {
@@ -74,5 +76,26 @@
 
   .stack-item {
     @apply bg-[#232323] leading-none rounded-xl pt-1.5 pb-2.5 px-2 text-[#d6d7db] font-medium text-lg inline-block mr-3 mb-3;
+  }
+
+  .resume-button {
+    @apply relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""];
+  }
+
+  .resume-button::after,
+  .resume-button::before {
+    @apply absolute top-0 left-0 w-full h-full z-0;
+  }
+
+  .resume-button::before {
+    @apply bg-[#111111] left-[-10%] w-[120%] transition-transform duration-400 ease-in-expo skew-x-30;
+  }
+
+  .resume-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .resume-button span {
+    @apply relative z-10 transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
   }
 }

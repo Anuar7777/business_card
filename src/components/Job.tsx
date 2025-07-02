@@ -25,7 +25,9 @@ const Job = ({ companyName, position, location, date, text, tech, link }) => {
 
       <div className="flex flex-wrap gap-3 px-1">
         {tech.map((techItem) => (
-          <div className="stack-item">{techItem}</div>
+          <div key={techItem} className="stack-item">
+            {techItem}
+          </div>
         ))}
       </div>
     </div>

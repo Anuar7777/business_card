@@ -14,7 +14,10 @@ const Hero = () => {
   return (
     <div className="flex relative justify-center h-screen items-center">
       <div className="relative flex flex-col max-w-[902px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] max-xl:mr-0 xl:mr-[200px]">
-        <h1 className="relative z-20 mb-7">{t("title")}</h1>
+        <h1 className="relative z-20 mb-7">
+          {t("title")}
+          <span>.</span>
+        </h1>
         <h3 className="text-4xl font-normal text-gray-200 relative z-20">
           {t("subtitle.white")}{" "}
           <span className="font-bold text-green-400">{t("subtitle.neon")}</span>
