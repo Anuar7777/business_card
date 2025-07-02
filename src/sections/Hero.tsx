@@ -12,7 +12,7 @@ const Hero = () => {
   ));
 
   return (
-    <div className="flex relative justify-center h-screen items-center">
+    <div className="flex relative justify-center h-[calc(100vh-80px)] items-center">
       <div className="relative flex flex-col max-w-[902px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] max-xl:mr-0 xl:mr-[200px]">
         <h1 className="relative z-20 mb-7">
           {t("title")}

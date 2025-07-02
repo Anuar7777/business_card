@@ -45,6 +45,10 @@
 
   /* base styles */
 
+  html {
+    @apply scroll-smooth;
+  }
+
   h1 {
     @apply max-md:text-6xl text-8xl;
   }
@@ -57,7 +61,7 @@
   h1,
   h2,
   h3 {
-    @apply text-gray-200 font-extrabold tracking-tighter;
+    @apply text-gray-200 font-extrabold tracking-tighter z-20;
   }
 
   p {
@@ -70,6 +74,10 @@
 }
 
 @layer utilities {
+  .app-layout {
+    @apply p-0 m-0 grid grid-cols-[60px_1fr];
+  }
+
   .stack-grid {
     @apply flex flex-wrap mt-6 gap-5;
   }
@@ -79,7 +87,7 @@
   }
 
   .resume-button {
-    @apply relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""];
+    @apply z-30 relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""];
   }
 
   .resume-button::after,
@@ -96,6 +104,11 @@
   }
 
   .resume-button span {
-    @apply relative z-10 transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
+    @apply relative z-30 transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
+  }
+
+  .vertical-lr {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
   }
 }

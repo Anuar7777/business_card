@@ -8,7 +8,7 @@ const ProfileLinks = () => {
   const { t } = useTranslation("links");
 
   const resumeURL = t("resumeName") === "resume_en" ? RESUME_EN : RESUME_RU;
-  console.log(resumeURL); // undefined
+ 
 
   const socialLinks = [
     { href: "https://www.linkedin.com/in/anuar-aman/", icon: <FaLinkedin /> },
@@ -17,7 +17,7 @@ const ProfileLinks = () => {
   ];
 
   return (
-    <nav className="z-20 flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
+    <nav className="z-10 flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
       <div className="flex justify-between gap-3">
         {socialLinks.map(({ href, icon }, idx) => (
           <a key={idx} href={href} target="_blank" rel="noopener noreferrer">
