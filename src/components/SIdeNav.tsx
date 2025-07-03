@@ -28,7 +28,7 @@ const sections = [
   { id: "contact", label: "Contact" },
 ];
 
-const SIdeNav = ({ activeSection }) => {
+const SIdeNav = ({ activeSection }: { activeSection: string }) => {
   return (
     <nav className="sticky bg-black flex flex-col p-0 z-30">
       <motion.div

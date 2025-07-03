@@ -1,14 +1,16 @@
 import { useState } from "react";
 import i18next from "i18next";
 
-const LanguageToggle = () => {
-  const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+const languages = ["en", "ru"] as const;
 
-  const languages = ["en", "ru"];
+type Language = (typeof languages)[number];
+
+const LanguageToggle = () => {
+  const [currentLanguageIndex, setCurrentLanguageIndex] = useState<number>(0);
 
   const toggleLanguage = () => {
     const nextIndex = (currentLanguageIndex + 1) % languages.length;
-    const nextLang = languages[nextIndex];
+    const nextLang: Language = languages[nextIndex];
     i18next.changeLanguage(nextLang);
     setCurrentLanguageIndex(nextIndex);
   };

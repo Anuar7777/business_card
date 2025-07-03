@@ -4,7 +4,9 @@ import { FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   const { t } = useTranslation("contact");
 
-  const descriptionParts = t("description", { returnObjects: true });
+  const descriptionParts = t("description", {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <div className="flex justify-center items-center min-h-screen">

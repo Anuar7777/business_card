@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
 import Job from "../components/Job";
+import type { IJob } from "../types";
 
 const Worklife = () => {
-  const { t } = useTranslation("experience");
+  const { t } = useTranslation("worklife");
 
-  const experienceItems = t("items", { returnObjects: true });
+  const experienceItems = t("items", { returnObjects: true }) as IJob[];
 
   return (
     <div className="flex relative justify-center min-h-screen">
@@ -19,9 +20,9 @@ const Worklife = () => {
         </div>
 
         <div className="flex flex-col mt-10">
-          {experienceItems.map((job, index) => (
+          {experienceItems.map((job, idx) => (
             <Job
-              key={index + job.companyName}
+              key={idx + job.companyName}
               companyName={job.companyName}
               position={job.position}
               location={job.location}

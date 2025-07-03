@@ -1,12 +1,23 @@
-const Job = ({ companyName, position, location, date, text, tech, link }) => {
+import type { IJob } from "../types";
+
+const Job = ({
+  companyName,
+  position,
+  location,
+  date,
+  text,
+  tech,
+  link,
+}: IJob) => {
   return (
     <div className="mt-7 flex flex-col border-b border-[#2e2e2e] pb-5 px-3">
       <div className="flex justify-between">
-        {!!link ? (
+        {link ? (
           <a
             href={link}
             className="cursor-pointer text-gray-200 text-2xl font-extrabold"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             {companyName}
           </a>
         ) : (

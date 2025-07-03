@@ -9,8 +9,8 @@ import SIdeNav from "./components/SIdeNav";
 import LanguageToggle from "./components/LanguageToggle";
 
 function App() {
-  const [isOpenProjectModal, setIsOpenProjectModal] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [isOpenProjectModal, setIsOpenProjectModal] = useState<boolean>(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   const observer = useRef<IntersectionObserver | null>(null);
 
@@ -35,7 +35,7 @@ function App() {
     };
   }, []);
 
-  const ProjectModalHandler = (value) => {
+  const ProjectModalHandler = (value: boolean) => {
     setIsOpenProjectModal(value);
   };
 

@@ -2,13 +2,16 @@ import { useTranslation } from "react-i18next";
 import { FaLinkedin, FaGithub, FaArrowRight, FaCode } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa6";
 import { RiTelegram2Fill } from "react-icons/ri";
+import type { IStack } from "../types";
 
 const About = () => {
   const { t } = useTranslation("about");
 
-  const descriptionParagraphs = t("description", { returnObjects: true });
-  const workStackItems = t("workStack", { returnObjects: true });
-  const famStackItems = t("funStack", { returnObjects: true });
+  const descriptionParagraphs = t("description", {
+    returnObjects: true,
+  }) as string[];
+  const workStackItems = t("workStack", { returnObjects: true }) as IStack;
+  const famStackItems = t("funStack", { returnObjects: true }) as IStack;
 
   return (
     <div className="flex relative justify-center">
