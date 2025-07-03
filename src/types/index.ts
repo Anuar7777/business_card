@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface IJob {
   companyName: string;
   position: string;
@@ -24,6 +26,12 @@ export interface IProject {
 export interface IStack {
   title: string;
   items: string[];
+}
+
+export interface ISlideMaskReveal {
+  children: ReactNode;
+  width?: string;
+  overflow?: "hidden" | "visible" | "scroll" | "auto";
 }
 
 export type ModalHandler = (value: boolean) => void;

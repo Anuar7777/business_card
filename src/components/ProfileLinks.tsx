@@ -8,7 +8,6 @@ const ProfileLinks = () => {
   const { t } = useTranslation("links");
 
   const resumeURL = t("resumeName") === "resume_en" ? RESUME_EN : RESUME_RU;
- 
 
   const socialLinks = [
     { href: "https://www.linkedin.com/in/anuar-aman/", icon: <FaLinkedin /> },

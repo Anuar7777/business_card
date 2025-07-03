@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Project from "../components/Project";
 import type { IProject, ModalHandler } from "../types";
+import RevealFadeUp from "../framer/RevealFadeUp";
 
 const Projects = ({ modalHandler }: { modalHandler: ModalHandler }) => {
   const { t } = useTranslation("projects");
@@ -11,10 +12,13 @@ const Projects = ({ modalHandler }: { modalHandler: ModalHandler }) => {
     <div className="flex relative justify-center min-h-screen">
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] ">
         <div className="flex justify-between items-center gap-8">
-          <h2>
-            Projects
-            <span>.</span>
-          </h2>
+          <RevealFadeUp>
+            <h2>
+              Projects
+              <span>.</span>
+            </h2>
+          </RevealFadeUp>
+
           <hr className="w-full border-b border-b-gray-300 border-t-0" />
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-[34px] max-md:grid-cols-1">

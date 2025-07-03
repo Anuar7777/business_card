@@ -1,5 +1,6 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import type { IProject } from "../types";
+import SlideMaskReveal from "../framer/SlideMaskReveal";
 
 const Project = ({
   live,
@@ -13,8 +14,6 @@ const Project = ({
   openSpan,
   heroImg,
 }: IProject) => {
-  // TODO: Should add modal window
-  console.log(bigText + imgs + modalHandler + openSpan);
   return (
     <div className="flex flex-col">
       <div className="cursor-pointer relative overflow-hidden rounded-xl bg-[#232323]">
@@ -25,27 +24,32 @@ const Project = ({
         />
       </div>
 
-      <div className="flex justify-between items-center gap-3 mt-5">
-        <h3>{name}</h3>
-        <hr className="border-t-0 border-b w-4/5 border-b-[#adadad]" />
-        <div className="flex justify-between gap-4">
-          {!!github && (
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
-            </a>
-          )}
+      <SlideMaskReveal width="100%" overflow="hidden">
+        <div className="flex justify-between items-center gap-3 mt-5">
+          <h3>{name}</h3>
+          <hr className="border-t-0 border-b w-4/5 border-b-[#adadad]" />
+          <div className="flex justify-between gap-4">
+            {!!github && (
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <FaGithub className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
+              </a>
+            )}
 
-          {!!live && (
-            <a href={live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
-            </a>
-          )}
+            {!!live && (
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkAlt className="text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400" />
+              </a>
+            )}
+          </div>
         </div>
-      </div>
+      </SlideMaskReveal>
 
-      <p className="text-green-400 mt-3.5 font-medium">{tech}</p>
-
-      <p className="text-[#c0c1c7] text-xl mt-3.5">{smallText}</p>
+      <SlideMaskReveal width="fit-content" overflow="hidden">
+        <p className="text-green-400 mt-3.5 font-medium">{tech}</p>
+      </SlideMaskReveal>
+      <SlideMaskReveal width="fit-content" overflow="hidden">
+        <p className="text-[#c0c1c7] text-xl mt-3.5">{smallText}</p>
+      </SlideMaskReveal>
     </div>
   );
 };

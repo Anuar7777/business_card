@@ -15,9 +15,6 @@ const item = {
   hidden: { x: -40 },
   visible: {
     x: 0,
-    transition: {
-      ease: "linear",
-    },
   },
 };
 
@@ -40,7 +37,8 @@ const SIdeNav = ({ activeSection }: { activeSection: string }) => {
           className="h-[65px] w-full flex justify-center items-center mt-2 gap-4"
           variants={item}
           initial="hidden"
-          animate="visible">
+          animate="visible"
+          transition={{ ease: "linear" }}>
           <a
             href="#top"
             className="text-gray-200 rounded-md leading-none font-bold px-2.5 py-3 w-fit bg-[#111] text-2xl">
@@ -49,7 +47,7 @@ const SIdeNav = ({ activeSection }: { activeSection: string }) => {
         </motion.div>
 
         {sections.map(({ id, label }) => (
-          <motion.div key={id} variants={item}>
+          <motion.div key={id} variants={item} transition={{ ease: "linear" }}>
             <a
               href={`#${id}`}
               className={`vertical-lr h-25 w-15 text-xl text-center border-r-2 py-4 text-[#747578] transition-colors duration-300 hover:text-[#d4d5db] hover:border-[#0aff9d] ${
