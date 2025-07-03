@@ -15,15 +15,16 @@ const About = () => {
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] ">
         <div className="flex justify-between items-center gap-8">
           <h2>
-            {t("title")}
-            <span>.</span>
+            About<span>.</span>
           </h2>
           <hr className="w-full border-b border-b-gray-300 border-t-0" />
         </div>
         <div className="grid grid-cols-[1fr_300px] gap-10 mt-[34px] max-md:grid-cols-1">
           <div className="flex flex-col gap-5">
             {!!descriptionParagraphs &&
-              descriptionParagraphs.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)}
+              descriptionParagraphs.map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
             <div className=" flex items-center gap-5 pt-1">
               <div className="flex items-center gap-3">
                 <p className="font-medium text-green-400">{t("linksTitle")}</p>

@@ -6,6 +6,7 @@ import Worklife from "./sections/Worklife";
 import Contact from "./sections/Contact";
 import ProfileLinks from "./components/ProfileLinks";
 import SIdeNav from "./components/SIdeNav";
+import LanguageToggle from "./components/LanguageToggle";
 
 function App() {
   const [isOpenProjectModal, setIsOpenProjectModal] = useState(false);
@@ -42,6 +43,7 @@ function App() {
     <div className="app-layout">
       <SIdeNav activeSection={activeSection} />
       <main id="top" className="relative bg-[#111111]">
+        <LanguageToggle />
         <ProfileLinks />
         <section id="hero" data-section>
           <Hero />

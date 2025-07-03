@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -12,7 +11,7 @@ const Contact = () => {
       <div className="max-w-[1094px] px-[96px] max-md:px-[26px] md:px-[46px] lg:px-[96px]">
         <div className="max-w-[700px]">
           <h1 className="text-center mb-7">
-            {t("title")}
+            Contact
             <span>.</span>
           </h1>
 
