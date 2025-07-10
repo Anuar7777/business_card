@@ -1,27 +1,28 @@
 {
   "description": [
-    "Hey! I'm Anuar, if you haven't already gathered that by now. I'm a software engineer from Astana, Kazakhstan. I specialize in the frontend, primarily React, but love exploring new tools and technologies right for the job.",
-    "Currently, I am working in the company taking projects to build mobile and web applications, honing my skills building various commercial products. I also take different online courses always eager to learn, while also studying at my university,👨🏻‍🎓 going deeper into best practices and familiarizing myself with new programming languages).",
-    "Outside of work, I play tennis with my friends and family, read some books📗 both code related and not, and watch TV shows to advance my English proficiency.",
-    "I'm actively looking for new positions where I can prove my passion for code. If you think you've got an opening that I can fill, let's connect 🔗"
+    "I'm a software engineer based in Astana, Kazakhstan. My main focus is web development with a strong background in backend, but over the past few years I’ve been actively building up my frontend skills - especially with React - to better understand the full development cycle and work confidently across the stack.",
+    "Right now, I’m focused on continuous learning: taking online courses, exploring modern technologies, and studying best development practices. I’m particularly interested in projects where architecture, code quality, and thoughtful user experience matter.",
+    "Outside of development, I focus on continuous learning - reading technical and fiction books, and listening to podcasts in English to grow both professionally and personally.",
+    "I'm open to new opportunities and looking for a team where I can apply my skills in both frontend and backend, continue to grow, and contribute real value to the product. If you're looking for a flexible and motivated developer - I’d love to connect!"
   ],
   "workStack": {
     "title": "Use at work",
     "items": [
       "Typescript",
       "React",
-      "Next",
-      "MySQL",
+      "Next.js",
+      "Node.js",
+      "MongoDB",
       "Redux",
       "TailwindCSS",
-      "SCSS",
+      "CSS",
       "HTML",
-      "GitHub"
+      "Git"
     ]
   },
   "funStack": {
     "title": "Familiar with",
-    "items": ["Golang", "Vue", "PostgreSQL", "MongoDB", "Python"]
+    "items": ["PostgreSQL", "Python", "Docker Compose", "Linux"]
   },
   "linksTitle": "My links"
 }

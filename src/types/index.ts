@@ -11,16 +11,15 @@ export interface IJob {
 }
 
 export interface IProject {
-  live: string;
-  github: string;
-  bigText: string;
   smallText: string;
+  bigText?: string[];
   tech: string[];
-  imgs: string;
   name: string;
-  modalHandler: ModalHandler;
-  openSpan: string;
+  imgs?: { src: string }[];
+  openSpan?: string;
   heroImg: string;
+  live?: string;
+  github?: string;
 }
 
 export interface IStack {
@@ -32,6 +31,5 @@ export interface ISlideMaskReveal {
   children: ReactNode;
   width?: string;
   overflow?: "hidden" | "visible" | "scroll" | "auto";
+  zIndex?: number;
 }
-
-export type ModalHandler = (value: boolean) => void;

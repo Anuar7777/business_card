@@ -6,6 +6,7 @@ const SlideMaskReveal = ({
   children,
   width = "auto",
   overflow = "hidden",
+  zIndex = 25,
 }: ISlideMaskReveal) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -21,7 +22,7 @@ const SlideMaskReveal = ({
   }, [isInView, contentControls, maskControls]);
 
   return (
-    <div ref={ref} className="relative z-20" style={{ width, overflow }}>
+    <div ref={ref} className="relative" style={{ width, overflow, zIndex }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

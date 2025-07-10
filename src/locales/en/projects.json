@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "name": "Ronin",
+      "name": "LiveDocs",
       "imgs": [
         {
           "src": "/img/projects/livedocs/livedocs-editor.png"
@@ -17,58 +17,17 @@
         }
       ],
       "heroImg": "/img/projects/livedocs/livedocs-editor.png",
-      "tech": "REACT - NEXT - SCSS",
-      "smallText": "A modern landing page for a design agency, featuring a sleek design and smooth animations.",
-      "bigText": "Ronin is a modern landing page for a design agency, built with React, Next.js, and SCSS. The project showcases my ability to create visually appealing and user-friendly interfaces, enhancing the user experience.\n\nThe site features a dynamic hero section, services section, FAQ section, and an about section, all meticulously designed for seamless user engagement. The use of SCSS ensures a consistent and visually appealing design, while the integration of Framer Motion adds subtle yet engaging animations.\n\nThis project is a testament to my web development skills and passion for creating appealing web experiences.",
-      "github": "https://github.com/SoftDev-Abay/ronin-ui",
-      "live": "https://ronin-ui-seven.vercel.app/",
-      "openSpan": "Learn more"
-    },
-    {
-      "name": "HashCats",
-      "imgs": [
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        }
+      "tech": "React - Next.js - TailwindCSS - LiveBlocks",
+      "smallText": "Real-time document collaboration with Google auth, live editing, comments, and smart notifications.",
+      "bigText": [
+        "LiveDocs is a real-time collaborative document editor built with modern technologies such as Next.js, TypeScript, and Tailwind CSS. The project demonstrates the ability to create scalable, interactive web applications with a clean codebase and a focus on user experience.",
+        "The application supports secure authentication via Google (using NextAuth), allowing users to sign in and manage their sessions safely. Users can create, edit, delete, and share documents with view or edit permissions. All documents are autosaved and accessible from the main page.",
+        "LiveDocs includes a real-time collaborative text editor, enabling multiple users to edit the same document simultaneously. It supports both inline and general comments with threaded replies for effective communication.",
+        "Active collaborators are displayed in real time, enhancing collaboration. Users receive notifications for comments, shared documents, and collaborator activity.",
+        "The app is fully responsive, works seamlessly across all devices, and is built with reusable components and a modular architecture."
       ],
-      "heroImg": "/img/projects/livedocs/livedocs-editor.png",
-      "tech": "REACT - NEXT - SCSS",
-      "smallText": "A landing page for a cryptocurrency company, featuring a sleek design and smooth animations.",
-      "bigText": "Hash-Cats is a landing page for a cryptocurrency company, built with React, Next.js, and SCSS. The project showcases my ability to create visually appealing and user-friendly interfaces, enhancing the user experience.\n\nThe site features a dynamic hero section, services section, FAQ section, and an about section, all meticulously designed for seamless user engagement. The use of SCSS ensures a consistent and visually appealing design, while the integration of Framer Motion adds subtle yet engaging animations.\n\nThis project is a testament to my web development skills and passion for creating appealing web experiences.",
-      "github": "https://github.com/SoftDev-Abay/tera-hash",
-      "live": "https://hashcats.net",
-      "openSpan": "Learn more"
-    },
-    {
-      "name": "Esep",
-      "imgs": [
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        },
-        {
-          "src": "/img/projects/livedocs/livedocs-editor.png"
-        }
-      ],
-      "heroImg": "/img/projects/livedocs/livedocs-editor.png",
-      "tech": "React - Redux - Node.js - MySQL",
-      "smallText": "A govermental platform for traking and managing reports",
-      "bigText": "A govermental platform from the company called DGSC used for traking and managing goverment reports.\n\nReports are structured in form of tables, there are respondents and admins. Admin are able to use uniquely created report constractor and assign reports to certain respondents. While respondents are able to fill in the relevant statistics and send them. Also on the platfrom reports are able to be aggregated, to allow to see data by for example regions or fileds.\n\nProject was crafted with Node.js, MySQL, ClickHouse, and on frontend were used Typescript, React, Redux and SCSS.",
-      "live": "https://esep.govtec.kz",
+      "github": "https://github.com/Anuar7777/livedoc",
+      "live": "https://livedoc-git-main-anuars-projects-9f46da88.vercel.app/",
       "openSpan": "Learn more"
     }
   ]

@@ -61,7 +61,7 @@
   h1,
   h2,
   h3 {
-    @apply text-gray-200 font-extrabold tracking-tighter z-20;
+    @apply text-gray-200 font-extrabold tracking-tighter;
   }
 
   p {
@@ -86,29 +86,37 @@
     @apply bg-[#232323] leading-none rounded-xl pt-1.5 pb-2.5 px-2 text-[#d6d7db] font-medium text-lg inline-block mr-3 mb-3;
   }
 
-  .resume-button {
-    @apply z-30 relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""];
+  .animated-button {
+    @apply z-30 relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""] inline-block;
   }
 
-  .resume-button::after,
-  .resume-button::before {
+  .animated-button::after,
+  .animated-button::before {
     @apply absolute top-0 left-0 w-full h-full z-0;
   }
 
-  .resume-button::before {
+  .animated-button::before {
     @apply bg-[#111111] left-[-10%] w-[120%] transition-transform duration-400 ease-in-expo skew-x-30;
   }
 
-  .resume-button:hover::before {
+  .animated-button:hover::before {
     transform: translate3d(100%, 0, 0);
   }
 
-  .resume-button span {
+  .animated-button span {
     @apply relative z-30 transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
   }
 
   .vertical-lr {
     writing-mode: vertical-lr;
     text-orientation: mixed;
+  }
+
+  .hidden-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

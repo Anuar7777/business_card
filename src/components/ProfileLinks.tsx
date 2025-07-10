@@ -16,7 +16,7 @@ const ProfileLinks = () => {
   ];
 
   return (
-    <nav className="z-10 flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
+    <nav className="z-30 flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
       <div className="flex justify-between gap-3">
         {socialLinks.map(({ href, icon }, idx) => (
           <a key={idx} href={href} target="_blank" rel="noopener noreferrer">
@@ -29,7 +29,7 @@ const ProfileLinks = () => {
       </div>
 
       <a
-        className="resume-button"
+        className="animated-button"
         href={resumeURL}
         target="_blank"
         rel="noopener noreferrer">

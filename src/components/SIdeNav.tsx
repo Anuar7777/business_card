@@ -27,7 +27,7 @@ const sections = [
 
 const SIdeNav = ({ activeSection }: { activeSection: string }) => {
   return (
-    <nav className="sticky bg-black flex flex-col p-0 z-30">
+    <nav className="sticky bg-black flex flex-col p-0 z-50">
       <motion.div
         className="fixed"
         variants={container}

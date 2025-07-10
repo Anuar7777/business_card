@@ -9,9 +9,9 @@ const Worklife = () => {
   const experienceItems = t("items", { returnObjects: true }) as IJob[];
 
   return (
-    <div className="flex relative justify-center min-h-screen">
+    <div className="flex relative justify-center min-h-screen mt-17">
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[46px] md:px-[46px] lg:px-[96px]">
-        <div className="flex justify-between items-center gap-8">
+        <div className="flex justify-between items-center gap-8 mt-20.5">
           <RevealFadeUp>
             <h2>
               Worklife
@@ -22,7 +22,7 @@ const Worklife = () => {
           <hr className="border-t-0 border-b w-full border-b-[#adadad]" />
         </div>
 
-        <div className="flex flex-col mt-10">
+        <div className="flex flex-col mt-8.5">
           {experienceItems.map((job, idx) => (
             <Job
               key={idx + job.companyName}

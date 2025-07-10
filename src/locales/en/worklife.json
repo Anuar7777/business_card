@@ -1,35 +1,19 @@
 {
   "items": [
     {
-      "companyName": "DGSC",
+      "companyName": "Qarmet",
       "position": "Full-stack developer",
       "location": "Astana, Kazakhstan",
-      "date": "10/2023 - Present",
-      "text": "While working at DGSC, I have contributed to the development and maintenance of a comprehensive reporting platform used by multiple government entities. Working on both frontend and backend sides of the development.",
+      "date": "09/2024 - 11/2024",
+      "text": "Led a team at the SAP BTP Nomad HackFest to develop a commercial chatbot for Qarmet's internal support, implementing both backend and frontend of a support dashboard using Node.js and SAP Fiori, integrating SAP HANA Cloud and SAP AI Core, and earning the «Most Valuable Person» award for technical leadership.",
       "tech": [
-        "React",
-        "Typescript",
-        "Redux",
-        "SCSS",
         "Node.js",
-        "MySQL",
-        "ClickHouse"
-      ],
-      "link": "https://govtec.kz/"
-    },
-    {
-      "companyName": "Mobile Market",
-      "position": "Full-stack developer",
-      "location": "Astana, Kazakhstan",
-      "date": "01/2023 - 10/2023",
-      "text": "During my stay at this company I was working on projects coming from Kazakhstan and USA, taking various projects on both web and mobile platforms, working on commercial projects, writing clean and maintainable code.",
-      "tech": [
-        "React",
-        "React Native",
-        "Typescript",
-        "Node.js",
-        "CSS",
-        "Firebase"
+        "SAP Fiori",
+        "SAPUI5",
+        "CDS",
+        "SQLite",
+        "SAP AI Core",
+        "SAP HANA Cloud"
       ]
     }
   ]

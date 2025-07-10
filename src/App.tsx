@@ -9,7 +9,6 @@ import SIdeNav from "./components/SIdeNav";
 import LanguageToggle from "./components/LanguageToggle";
 
 function App() {
-  const [isOpenProjectModal, setIsOpenProjectModal] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>("");
 
   const observer = useRef<IntersectionObserver | null>(null);
@@ -35,10 +34,6 @@ function App() {
     };
   }, []);
 
-  const ProjectModalHandler = (value: boolean) => {
-    setIsOpenProjectModal(value);
-  };
-
   return (
     <div className="app-layout">
       <SIdeNav activeSection={activeSection} />
@@ -48,13 +43,13 @@ function App() {
         <section id="hero" data-section>
           <Hero />
         </section>
-        <section id="about" className="mt-[150px]" data-section>
+        <section id="about" data-section>
           <About />
         </section>
-        <section id="projects" className="mt-[150px]" data-section>
-          <Projects modalHandler={ProjectModalHandler} />
+        <section id="projects" data-section>
+          <Projects />
         </section>
-        <section id="worklife" className="mt-[150px]" data-section>
+        <section id="worklife" data-section>
           <Worklife />
         </section>
         <section id="contact" data-section>

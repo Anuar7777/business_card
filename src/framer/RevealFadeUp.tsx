@@ -1,7 +1,13 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, type ReactNode } from "react";
 
-const RevealFadeUp = ({ children }: { children: ReactNode }) => {
+const RevealFadeUp = ({
+  children,
+  zIndex = 0,
+}: {
+  children: ReactNode;
+  zIndex?: number;
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -13,7 +19,7 @@ const RevealFadeUp = ({ children }: { children: ReactNode }) => {
   }, [isInView, controls]);
 
   return (
-    <div ref={ref} className="relative z-20">
+    <div ref={ref} className="relative" style={{ zIndex }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

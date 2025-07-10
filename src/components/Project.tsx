@@ -5,20 +5,16 @@ import SlideMaskReveal from "../framer/SlideMaskReveal";
 const Project = ({
   live,
   github,
-  bigText,
   smallText,
   tech,
-  imgs,
   name,
-  modalHandler,
-  openSpan,
   heroImg,
 }: IProject) => {
   return (
     <div className="flex flex-col">
       <div className="cursor-pointer relative overflow-hidden rounded-xl bg-[#232323]">
         <img
-          className="h-[232px] w-full rounded-lg relative top-5 duration-150 group-hover:ease-in ease-out scale-85 group-hover:rotate-2 group-hover:scale-90"
+          className="h-[252px] w-full rounded-lg relative top-4 duration-150 hover:ease-in ease-out scale-90 hover:rotate-2 hover:scale-95"
           src={heroImg}
           alt={name}
         />
@@ -26,7 +22,7 @@ const Project = ({
 
       <SlideMaskReveal width="100%" overflow="hidden">
         <div className="flex justify-between items-center gap-3 mt-5">
-          <h3>{name}</h3>
+          <h3 className="cursor-pointer">{name}</h3>
           <hr className="border-t-0 border-b w-4/5 border-b-[#adadad]" />
           <div className="flex justify-between gap-4">
             {!!github && (
