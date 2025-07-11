@@ -87,7 +87,7 @@
   }
 
   .animated-button {
-    @apply z-30 relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""] inline-block;
+    @apply relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""] inline-block;
   }
 
   .animated-button::after,
@@ -104,7 +104,7 @@
   }
 
   .animated-button span {
-    @apply relative z-30 transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
+    @apply relative transition-colors duration-400 inline-flex items-center pt-[8px] pb-[10px] px-[22px] hover:text-black;
   }
 
   .vertical-lr {

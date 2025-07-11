@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Job from "../components/Job";
 import type { IJob } from "../types";
 import RevealFadeUp from "../framer/RevealFadeUp";
+import React from "react";
 
 const Worklife = () => {
   const { t } = useTranslation("worklife");
@@ -42,4 +43,4 @@ const Worklife = () => {
   );
 };
 
-export default Worklife;
+export default React.memo(Worklife);
