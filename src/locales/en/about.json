@@ -22,7 +22,7 @@
   },
   "funStack": {
     "title": "Familiar with",
-    "items": ["PostgreSQL", "Python", "Docker Compose", "Linux"]
+    "items": ["Docker Compose", "PostgreSQL", "Python", "Linux"]
   },
   "linksTitle": "My links"
 }

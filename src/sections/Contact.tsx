@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FaEnvelope } from "react-icons/fa";
 import RevealFadeUp from "../framer/RevealFadeUp";
 import SlideMaskReveal from "../framer/SlideMaskReveal";
-import React from "react";
+import { memo } from "react";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
@@ -43,7 +43,7 @@ const Contact = () => {
             </p>
           </SlideMaskReveal>
 
-          <div className="flex justify-center text-center mt-5 font-bold text-[#dadbe0] text-3xl">
+          <div className="flex justify-center text-center mt-5 font-bold text-[#dadbe0] text-3xl max-sm:text-xl">
             <SlideMaskReveal width="fit-content" overflow="hidden">
               <a
                 className="flex gap-2 text-center hover:text-green-400 transition-colors duration-400 items-center active:scale-95"
@@ -59,4 +59,4 @@ const Contact = () => {
   );
 };
 
-export default React.memo(Contact);
+export default memo(Contact);

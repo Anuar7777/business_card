@@ -1,6 +1,7 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import type { IProject } from "../types";
 import SlideMaskReveal from "../framer/SlideMaskReveal";
+import { memo } from "react";
 
 const Project = ({
   live,
@@ -17,6 +18,7 @@ const Project = ({
           className="h-[252px] w-full rounded-lg relative top-4 duration-150 hover:ease-in ease-out scale-90 hover:rotate-2 hover:scale-95"
           src={heroImg}
           alt={name}
+          loading="lazy"
         />
       </div>
 
@@ -50,4 +52,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default memo(Project);

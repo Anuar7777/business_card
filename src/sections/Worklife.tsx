@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import Job from "../components/Job";
 import type { IJob } from "../types";
 import RevealFadeUp from "../framer/RevealFadeUp";
-import React from "react";
+import { memo } from "react";
 
 const Worklife = () => {
   const { t } = useTranslation("worklife");
@@ -10,7 +10,7 @@ const Worklife = () => {
   const experienceItems = t("items", { returnObjects: true }) as IJob[];
 
   return (
-    <div className="flex relative justify-center min-h-screen mt-17">
+    <div className="flex relative justify-center sm:min-h-screen mt-17 max-sm:mt-0">
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[46px] md:px-[46px] lg:px-[96px]">
         <div className="flex justify-between items-center gap-8 mt-20.5">
           <RevealFadeUp>
@@ -43,4 +43,4 @@ const Worklife = () => {
   );
 };
 
-export default React.memo(Worklife);
+export default memo(Worklife);

@@ -1,4 +1,4 @@
-import React from "react";
+import { cloneElement, memo } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiTelegram2Fill } from "react-icons/ri";
@@ -16,11 +16,11 @@ const ProfileLinks = () => {
   ];
 
   return (
-    <nav className="z-30 flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
+    <nav className="z-30 hidden sm:flex w-full backdrop-blur-md justify-between flex-row py-4 items-center px-10 top-0 bg-transparent sticky">
       <div className="flex justify-between gap-3">
         {socialLinks.map(({ href, icon }, idx) => (
           <a key={idx} href={href} target="_blank" rel="noopener noreferrer">
-            {React.cloneElement(icon, {
+            {cloneElement(icon, {
               className:
                 "text-2xl text-[#7e7e82] hover:text-green-400 cursor-pointer transition-colors duration-400",
             })}
@@ -39,4 +39,4 @@ const ProfileLinks = () => {
   );
 };
 
-export default ProfileLinks;
+export default memo(ProfileLinks);

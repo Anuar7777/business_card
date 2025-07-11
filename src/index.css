@@ -50,13 +50,13 @@
   }
 
   h1 {
-    @apply max-md:text-6xl text-8xl;
+    @apply max-sm:text-4xl max-md:text-6xl text-8xl;
   }
   h2 {
-    @apply max-md:text-6xl text-6xl;
+    @apply max-sm:text-4xl max-md:text-6xl text-6xl;
   }
   h3 {
-    @apply text-2xl;
+    @apply max-sm:text-[20px] text-2xl;
   }
   h1,
   h2,
@@ -65,7 +65,7 @@
   }
 
   p {
-    @apply text-gray-300 text-lg;
+    @apply text-gray-300 sm:text-lg text-sm;
   }
 
   span {
@@ -75,7 +75,7 @@
 
 @layer utilities {
   .app-layout {
-    @apply p-0 m-0 grid grid-cols-[60px_1fr];
+    @apply p-0 m-0 sm:grid sm:grid-cols-[60px_1fr];
   }
 
   .stack-grid {
@@ -83,11 +83,11 @@
   }
 
   .stack-item {
-    @apply bg-[#232323] leading-none rounded-xl pt-1.5 pb-2.5 px-2 text-[#d6d7db] font-medium text-lg inline-block mr-3 mb-3;
+    @apply bg-[#232323] leading-none rounded-xl pt-1.5 pb-2.5 px-2 text-[#d6d7db] font-medium text-lg inline-block mr-3 mb-3 max-sm:text-base max-sm:mr-2;
   }
 
   .animated-button {
-    @apply relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 tracking-wider active:scale-95 before:content-[""] inline-block;
+    @apply relative text-lg overflow-hidden cursor-pointer font-medium rounded-md border border-green-400 bg-green-400 max-sm:bg-transparent tracking-wider duration-300 active:scale-95 before:content-[""] inline-block;
   }
 
   .animated-button::after,
@@ -96,7 +96,7 @@
   }
 
   .animated-button::before {
-    @apply bg-[#111111] left-[-10%] w-[120%] transition-transform duration-400 ease-in-expo skew-x-30;
+    @apply bg-[#111111] left-[-10%] w-[120%] transition-transform duration-400 ease-in-expo skew-x-30 max-sm:hidden;
   }
 
   .animated-button:hover::before {

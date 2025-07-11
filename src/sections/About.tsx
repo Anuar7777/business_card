@@ -5,7 +5,7 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import type { IStack } from "../types";
 import RevealFadeUp from "../framer/RevealFadeUp";
 import SlideMaskReveal from "../framer/SlideMaskReveal";
-import React from "react";
+import { memo } from "react";
 
 const About = () => {
   const { t } = useTranslation("about");
@@ -17,7 +17,7 @@ const About = () => {
   const famStackItems = t("funStack", { returnObjects: true }) as IStack;
 
   return (
-    <div className="flex relative justify-center mt-17">
+    <div className="flex relative justify-center mt-17 max-sm:mt-0">
       <div className="max-w-[1094px] px-[96px] min-w-[200px] max-md:px-[26px] md:px-[46px] lg:px-[96px] ">
         <div className="flex justify-between items-center gap-8 mt-20.5">
           <RevealFadeUp>
@@ -109,4 +109,4 @@ const About = () => {
   );
 };
 
-export default React.memo(About);
+export default memo(About);
